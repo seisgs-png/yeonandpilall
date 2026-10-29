@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>연앤필</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#14161a">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="연앤필">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand">연앤필</a>
+    <span id="page-title" class="page-title"></span>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+
+  <main id="app" class="app" aria-live="polite"></main>
+
+  <nav id="tabbar" class="tabbar" aria-label="메뉴">
+    <a href="#/" data-tab="home"><span class="ti">⌂</span><span>홈</span></a>
+    <a href="#/schedule" data-tab="schedule"><span class="ti">▦</span><span>일정</span></a>
+    <a href="#/todo" data-tab="todo"><span class="ti">✓</span><span>할일</span></a>
+    <a href="#/money" data-tab="money"><span class="ti">₩</span><span>정산</span></a>
+    <a href="#/more" data-tab="more"><span class="ti">⋯</span><span>더보기</span></a>
+  </nav>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
